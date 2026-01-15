@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+    <p>Use the following form to send a message to Example Cafe</p>
+
+    <form action="submit_form.php" method="post">
+        <table>
+            <!-- Step 2: Email Input -->
+            <tr>
+                <td>Your email</td>
+                <td>
+                    <input type="text" name="txtFrom" id="emailFrom" size="20" maxlength="250" />
+                </td>
+            </tr>
+
+            <!-- Step 3: Text Area for Message -->
+            <tr>
+                <td>Message</td>
+                <td>
+                    <textarea name="txtMessage" rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <!-- Step 4: Select Box for Referrer -->
+            <tr>
+                <td>How did you hear of us?</td>
+                <td>
+                    <select name="selReferrer">
+                        <option value="google">Google</option>
+                        <option value="friend">From a Friend</option>
+                        <option value="advert">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Step 5: Checkbox for Newsletter (Checked by default) -->
+            <tr>
+                <td>Newsletter</td>
+                <td>
+                    <input type="checkbox" name="chkNewsletter" value="yes" checked="checked" /> 
+                    Sign up for email updates
+                </td>
+            </tr>
+        </table>
+
+        <!-- Step 6: Submit Button -->
+        <p>
+            <input type="submit" value="Send Message" />
+        </p>
+    </form>
+
+</body>
+</html>

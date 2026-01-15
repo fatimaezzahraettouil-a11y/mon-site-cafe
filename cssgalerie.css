@@ -1,0 +1,45 @@
+/* Style du conteneur principal */
+.galerie-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* La grille magique (Responsive sans Media Queries) */
+.galerie-grid {
+    display: grid;
+    /* Crée des colonnes d'au moins 280px qui remplissent l'espace */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* Espace entre les images */
+}
+
+/* Style de chaque item (image + légende) */
+.galerie-item {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f4f4f4;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.galerie-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Garde les proportions sans déformer */
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Effet de zoom au passage de la souris */
+.galerie-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Style des légendes */
+figcaption {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}

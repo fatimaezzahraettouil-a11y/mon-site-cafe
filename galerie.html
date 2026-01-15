@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="interface.css">
+    <link rel="stylesheet" href="file.css">
+    <div id="navigation">
+    <h1>
+    <a href="menu.html"class="bouton-lien">MENU</a> 
+    <a href="recipes.html"class="bouton-lien">RECIPES</a> 
+    <a href="opening.html"class="bouton-lien">OPENING</a> 
+    <a href="index.html"class="bouton-lien">index</a> 
+    <a class="bouton-lien">galerie</a>
+    </h1>
+    </div>
+    <title>Café AI - Reconnaissance de Boissons</title>
+    <!-- Import de TensorFlow.js et MobileNet en 2026 -->
+    <script src="cdn.jsdelivr.net"></script>
+    <script src="cdn.jsdelivr.net"></script>
+    <style>
+        #preview { width: 300px; height: 300px; object-fit: cover; display: none; }
+        .suggestion { color: #2ecc71; font-weight: bold; }
+    </style>
+    
+</head>
+<body>
+    <h1>☕ Scanner de Boissons - Café AI</h1>
+    
+    <input type="file" id="imageUpload" accept="image/*">
+    <br><br>
+    <img id="preview" src="" alt="Aperçu de la boisson">
+    
+    <div id="result">
+        <p id="status">En attente d'une image...</p>
+        <p id="prediction"></p>
+        <p id="suggestion" class="suggestion"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

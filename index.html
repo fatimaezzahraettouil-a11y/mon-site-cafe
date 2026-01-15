@@ -1,0 +1,112 @@
+<html>
+        <html lang="fr">
+    <head>  
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="interface.css">
+        <link rel="stylesheet" type="link" href="file.css">
+    <!-- Remarque : utilisez une police similaire, comme Georgia ou Times New Roman -->
+     <header> 
+    <div id="navigation"></div>
+     index
+    <a href="menu.html"class="bouton-lien">MENU</a> 
+    <a href="recipes.html"class="bouton-lien">RECIPES</a> 
+    <a href="opening.html"class="bouton-lien">OPENING</a> 
+    <a href="contact.html"class="bouton-lien">CONTACT</a>
+    <a href="galerie.html"class="bouton-lien">galerie</a>
+
+    </div>
+    </header>
+    <nav>
+    <div id="navigation"> 
+    <title>Café  THE THIRD</title>
+       <style>p3 {
+            color: rgb(234, 234, 240);            /* Couleur du texte */
+            font-size: 18px;        /* Taille de la police */
+            font-family: Arial;     /* Type de police */
+            line-height: 1.5;       /* Espacement entre les lignes */
+            text-align: justify;    /* Alignement du texte */
+        }
+        </style>
+</head> 
+<body>
+       <main>
+  <section ;>
+    <P3 style="color: rgb(13, 13, 14)">
+    Café  THE THIRD <br>
+     vous assure  une expérience <br>M
+     authentique et agréable, que ce soit pour une pause rapide, <BR>
+     un déjeuner ou un moment de détente
+    </p3>
+</section>
+</main>
+</div>
+    <style>
+           body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+        }
+    </style>                  
+    <!-- Simule le conteneur principal de la fenêtre du navigateur -->
+    <div class="browser-container">
+        <!-- Conteneur pour le contenu principal -->
+        <div class="page-container">
+            <header>
+                <div class="logo">
+                    THE THIRD <br>cafe
+                </div>
+               
+            </header>
+
+            <main class="main-content-area">
+                <div class="image-area">
+                    <!-- Placeholder pour l'image - remplacez par votre balise <img> avec l'image du plat -->
+                    <div class="food-image-placeholder"></div>
+                </div>
+                <div class="text-area">
+                  <!--  <h2 style='color:black'>A community cafe serving home cooked, locally sourced, organic food</h2>
+                    <p style='color:black'>With stunning views of the ocean. Example Cafe offers the perfect environment to unwind and recharge the batteries.</p>
+                    <p style='color:black'>Our menu offers a wide range of breakfasts, brunches and lunches, including a range of vegetarian options.</p>
+                    <p style='color:black'>Whether you sip on a fresh, hot coffee or a strong smoothie, you never need to feel rushed - relax with friends or just watch the world go by.</p> -->
+<h1 style='color:black' >Un café communautaire servant des plats faits maison, préparés avec des produits locaux et biologiques.</h1> 
+<P style='color:black'>Bienvenue dans votre café solidaire, un véritable lieu de vie au cœur de votre quartier. Ici, nous croyons qu’une cuisine savoureuse commence par le respect de la terre et de ceux qui la cultivent.
+Laissez-vous tenter par notre cuisine faite maison, préparée chaque jour avec passion. Nous sélectionnons rigoureusement des produits locaux et de saison, issus de l’agriculture biologique, pour vous offrir des assiettes saines, authentiques et pleines de saveurs.
+Venir chez nous, c'est bien plus que s'offrir un repas : c'est soutenir une économie de proximité et partager un moment de convivialité dans une ambiance chaleureuse.
+</P>
+                </div>
+            </main>
+
+            <section class="weekend-special-area" style='color:black'>
+              <!--  <h3 style='color:black'>This weekend's special brunch</h3>
+                <p style='color:black'>This weekend, our season of special brunches continues with scrambled egg on an English muffin. Not for the faint-hearted, the secret to these eggs is that they are made with half cream and cooked in butter, with no more than four eggs in the pan at a time.</p>-->
+            <h2 style='color:black'> le brunch spécial de ce week-end</h2>
+<p1style='color:black'>Oubliez la routine et laissez-vous tenter par notre brunch exclusif ce samedi et dimanche !
+Nous avons concocté pour vous une carte éphémère qui marie classiques incontournables et créations audacieuses. Que vous soyez adepte du sucré, mordu de salé, ou un peu des deux, notre chef a sélectionné les meilleurs produits de saison pour enchanter vos papilles. </p1>
+            </section>
+        </div>
+    </div>
+
+ <h2 style='color:black';> Votre localisation actuelle :</h2>
+    <!-- Emplacements où les données seront affichées -->
+    <p style="color: black;">Ville : <span id="ville">Chargement...</span></p>
+    <p style="color: black;">Pays : <span id="pays">Chargement...</span></p>
+    <script>
+        // Utilisation de l'API gratuite ipapi.co pour récupérer les données en JSON
+        fetch('ipapi.co')
+            .then(response => response.json())
+            .then(data => {
+                // Mise à jour du texte avec les données reçues
+                document.getElementById('ville').textContent = data.city;
+                document.getElementById('pays').textContent = data.country_name;
+            })
+            .catch(error => {
+                console.error('Erreur lors de la récupération :', error);
+                document.getElementById('ville').textContent = "Indisponible";
+            });
+    </script>
+</body>
+<footer style="color: black;"> 
+ 
+     <a href="https://tr.web-counter.net">visiteurs: </a>
+     <img src="https://www.web-counter.net/count_20091204.php?c=0qDhjgzSXtn" style="border:0;padding:0;margin:0 ;" alt="compteur gratuit">     
+    </footer>
+</html>

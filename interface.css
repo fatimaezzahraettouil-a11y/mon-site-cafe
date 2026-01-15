@@ -1,0 +1,213 @@
+/* style sheet for Example Cafe */
+
+/* 2. Police par défaut pour le corps de la page */
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+/* 3. Styles pour les titres (choix de police et couleur grise) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, Times, serif;
+    color: #fff9f9;
+}
+
+/* 4. Styles pour les paragraphes (taille réduite et gris foncé) */
+p {
+    font-size: 90%;
+    color: #f0ebeb;
+}
+
+/* 6 & 7. Styles des liens de navigation (bleu clair et sans soulignement) */
+#navigation a {
+    color: #ADD8E6; /* Bleu clair */
+    text-decoration: none; /* Supprime le soulignement */
+}
+#page {
+    margin: 20px;
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+ /*1.3em d'interligne partout*/
+body {
+    line-height: 1.3em;
+}
+/* Navigation stylisée */
+nav {
+
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+
+
+/* Image avec bordure et marges */
+.main_image {
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ece0e0; /* Couleur de fond de la page principale */
+    padding: 20px;
+}
+
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Styles pour simuler la fenêtre du navigateur */
+.browser-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1000px; /* Largeur maximale du site */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-container {
+    padding: 20px;
+    border: 1px solid #eee; /* Bordure intérieure fine */
+}
+
+/* En-tête et Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Utilisation de Flexbox pour le menu horizontal */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Section Principale (Image et Texte) */
+.main-content-area {
+    display: grid; /* Utilisation de CSS Grid pour la disposition en colonnes */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de taille égale */
+    gap: 20px; /* Espace entre les colonnes */
+    margin-bottom: 20px;
+}
+
+.image-area {
+    /* Styles pour le conteneur d'image */
+    background-color: #eee; /* Couleur de fond si l'image ne charge pas */
+}
+
+.food-image-placeholder {
+    /* Ceci est un placeholder visuel si vous n'avez pas d'image immédiatement */
+    width: 100%;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    background: url('Egg.jpg') no-repeat center center;
+    background-size: cover;
+    /* Retirez les lignes background-color ci-dessus si vous utilisez une vraie image <img> */
+}
+
+.text-area h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-area p {
+    margin-bottom: 10px;
+}
+
+/* Section Spéciale du Week-end */
+.weekend-special-area {
+    background-color: #faf8f8; /* Légère couleur de fond pour la démarquer */
+    padding: 15px;
+    border-top: 1px solid #f9f2f2;
+    border-bottom: 1px solid #eee;
+}
+
+.weekend-special-area h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.h1 {
+    background-color: #6f4e37;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation fluide */
+    cursor: pointer;
+}
+
+/* État au survol (hover) */
+h1:hover {
+    transform: scale(1.1);       /* Agrandissement de 10% */
+    background-color: #d4a373;   /* Changement de couleur */
+}
+
+/* Optionnel : État au clic pour plus de réalisme */
+h1:active {
+    transform: scale(0.95);      /* Légère pression au clic */
+}
+.bouton-lien {
+  /* Suppression du style de lien par défaut */
+  text-decoration: none; /* Supprime le soulignement */
+  color: white; /* Couleur du texte */
+
+  /* Apparence de bouton */
+  background-color: #301a01db; /* Couleur de fond (bleu) */
+  padding: 10px 20px; /* Espace autour du texte (marge interne) */
+  border-radius: 5px; /* Coins arrondis */
+  display: inline-block; /* Permet d'appliquer padding et marges */
+  text-align: center; /* Centrage du texte */
+  cursor: pointer; /* Change le curseur en main au survol */
+  margin: 5px; /* Marge externe entre les boutons */
+}
+
+/* Style au survol (optionnel, pour l'interactivité) */
+.bouton-lien:hover {
+  background-color: #838188; /* Une couleur légèrement différente au survol */
+  flex-grow: 0.5;
+}
+
+.entete-page {
+  position: fixed;    /* Fixe le menu en haut de l'écran */
+  top: 0;
+  left: 0;
+  width: 100%;        /* Prend toute la largeur */
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Ombre légère pour le relief */
+  z-index: 1000;      /* Reste au-dessus du contenu */
+  padding: 15px 0;    /* Espace vertical dans le menu */
+}
+.table { display: grid;
+    grid-template-columns:repeat(8) ;
+    width: 600px;
+    background-color: rgb(40, 34, 34);
+
+}
